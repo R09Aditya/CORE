@@ -79,14 +79,14 @@ nav a.active {
     color: rgb(175, 175, 175);
 }
 
-/* Buttons */
 .button-container {
     position: absolute;
-    top: 70%;
+    top: 75%; /* slightly lower */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 2rem; /* space between buttons */
+    gap: 2rem;
+    z-index: 5; /* ensure above video */
 }
 
 .button-container .btn {
@@ -95,10 +95,10 @@ nav a.active {
     font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #ff0000; /* temporary bright color to see it */
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* for links */
+    text-decoration: none;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
@@ -114,3 +114,4 @@ nav a.active {
     transform: scale(0.97);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
+
