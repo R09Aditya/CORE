@@ -80,16 +80,6 @@ nav a.active {
     color: rgb(175, 175, 175);
 }
 
-/* Buttons container below main heading */
-.button-container {
-    margin-top: 2rem;
-    display: inline-flex;
-    gap: 2rem;
-    justify-content: center;
-    width: 100%;
-}
-
-/* Button styles */
 .button-container .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -101,16 +91,35 @@ nav a.active {
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-.button-container .btn:hover {
-    background-color: #333333;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+/* Create blue dots pattern using a CSS radial gradient */
+.button-container .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #007BFF 2px, transparent 3px);
+    background-size: 15px 15px; /* spacing between dots */
+    opacity: 0.15; /* subtle effect */
+    pointer-events: none;
+    border-radius: 5px;
 }
 
+/* Hover effect */
+.button-container .btn:hover {
+    background-color: #222222;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pressed effect */
 .button-container .btn:active {
     transform: scale(0.97);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
