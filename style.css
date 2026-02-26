@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset and base styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -67,6 +67,7 @@ nav a.active {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
+    width: 100%;
 }
 
 .main h1 {
@@ -79,39 +80,37 @@ nav a.active {
     color: rgb(175, 175, 175);
 }
 
+/* Buttons container below main heading */
 .button-container {
-    position: absolute;
-    top: 75%; /* slightly lower */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+    margin-top: 2rem;
+    display: inline-flex;
     gap: 2rem;
-    z-index: 5; /* ensure above video */
+    justify-content: center;
+    width: 100%;
 }
 
+/* Button styles */
 .button-container .btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
-    background-color: #ff0000; /* temporary bright color to see it */
+    background-color: #000000;
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .button-container .btn:hover {
     background-color: #333333;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
 .button-container .btn:active {
     transform: scale(0.97);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
-
