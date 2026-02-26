@@ -96,19 +96,18 @@ nav a.active {
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
-}
-.button button {
+
     padding: 1rem 2rem;
     font-size: 2rem;
     color: #ffffff;
     background-color: #000000;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.button button:hover {
+.button:hover {
     background-color: #333333;
 }
 
@@ -223,4 +222,5 @@ position: relative;
     width: 250px;
     height: auto;
     border-radius: 50%;
+
 }
