@@ -98,28 +98,28 @@ nav a.active {
     transform: translateX(-50%);
 }
 
+/* Make the link fully look like a button */
 .button .btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2rem;
     font-weight: 600;
-    color: #ffffff;
-    background-color: #000000;
-    border-radius: 6px;
-    text-decoration: none;   /* removes link underline */
+    color: #ffffff !important;      /* ensures text is white */
+    background-color: #000000 !important; /* ensures background is black */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none !important; /* removes underline */
     text-align: center;
     cursor: pointer;
-    border: 2px solid #000000;
-    transition: all 0.2s ease;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
 /* Hover effect */
 .button .btn:hover {
-    background-color: #333333;
-    border-color: #333333;
+    background-color: #333333 !important;
 }
 
-/* Click (press) effect */
+/* Press effect */
 .button .btn:active {
     transform: scale(0.97);
 }
@@ -237,6 +237,7 @@ position: relative;
     border-radius: 50%;
 
 }
+
 
 
 
