@@ -80,6 +80,16 @@ nav a.active {
     color: rgb(175, 175, 175);
 }
 
+/* Buttons container below main heading */
+.button-container {
+    margin-top: 2rem;
+    display: inline-flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Button styles with blue dots background */
 .button-container .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -97,7 +107,7 @@ nav a.active {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* Create blue dots pattern using a CSS radial gradient */
+/* Blue dots pattern */
 .button-container .btn::before {
     content: "";
     position: absolute;
@@ -106,8 +116,8 @@ nav a.active {
     width: 100%;
     height: 100%;
     background-image: radial-gradient(circle, #007BFF 2px, transparent 3px);
-    background-size: 15px 15px; /* spacing between dots */
-    opacity: 0.15; /* subtle effect */
+    background-size: 15px 15px;
+    opacity: 0.15;
     pointer-events: none;
     border-radius: 5px;
 }
