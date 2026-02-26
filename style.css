@@ -81,50 +81,31 @@ nav a.active {
 }
 
 /* Buttons container below main heading */
-.button-container {
-    margin-top: 2rem;
-    display: inline-flex;
-    gap: 2rem;
-    justify-content: center;
-    width: 100%;
-}
-
-/* Button styles with blue dots background */
 .button-container .btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2rem;
     font-weight: 600;
-    color: #ffffff;
-    background-color: #000000;
+    color: #ffffff;            /* white text */
+    background-color: #000000; /* solid black background */
     border: none;
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
     transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Blue dots pattern */
+/* Remove any ::before pattern */
 .button-container .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle, #007BFF 2px, transparent 3px);
-    background-size: 15px 15px;
-    opacity: 0.15;
-    pointer-events: none;
-    border-radius: 5px;
+    content: none;
 }
 
 /* Hover effect */
 .button-container .btn:hover {
-    background-color: #222222;
+    background-color: #333333; /* dark gray on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -133,3 +114,4 @@ nav a.active {
     transform: scale(0.97);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
+
