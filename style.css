@@ -102,17 +102,26 @@ nav a.active {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2rem;
+    font-weight: 600;
     color: #ffffff;
     background-color: #000000;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;   /* removes underline */
+    border-radius: 6px;
+    text-decoration: none;   /* removes link underline */
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: 2px solid #000000;
+    transition: all 0.2s ease;
 }
 
+/* Hover effect */
 .button .btn:hover {
     background-color: #333333;
+    border-color: #333333;
+}
+
+/* Click (press) effect */
+.button .btn:active {
+    transform: scale(0.97);
 }
 
 .maiamain{
@@ -228,5 +237,6 @@ position: relative;
     border-radius: 50%;
 
 }
+
 
 
