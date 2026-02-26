@@ -98,19 +98,20 @@ nav a.active {
     transform: translateX(-50%);
 }
 
-.button .button-link {
+.button .btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2rem;
     color: #ffffff;
     background-color: #000000;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none;   /* removes underline */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.button .button-link:hover {
+.button .btn:hover {
     background-color: #333333;
 }
 
@@ -227,4 +228,5 @@ position: relative;
     border-radius: 50%;
 
 }
+
 
